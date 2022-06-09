@@ -33,11 +33,9 @@
 }
 #elements{
     text-align: right;
-    /* display: inline; */
    
     margin-top:2vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 5vh;
 }
@@ -45,7 +43,7 @@
     list-style-type:none;
     /* display: inline; */
     float: left;
-    margin-left: 5vh;
+    /* margin-left: 5vh; */
     font-size: large;
    margin-right: auto;
    color: black;
@@ -81,7 +79,7 @@ li{
     font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
-  font-size: 2vh;
+  font-size: 1.9vh;
     color:dimgray;
 }
 
@@ -111,4 +109,50 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif; 
 font-family: 'Roboto', sans-serif;
 font-size: 5vh;
+}
+
+.mobile{
+   display: none;
+}
+
+@media screen and (max-width : 650px) {
+    .mobile{
+        display: flex;
+        
+        border: 2px solid black;
+        color: black;
+        flex-direction: row;
+        justify-content: center;
+        width: 80vw;
+        height: 5vh;
+        align-items: center;
+        margin: auto;
+        border-radius:25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+
+    .mobile div{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        margin: 2.5vw;
+    }
+    .mobile div a{
+        text-decoration: none;
+        text-decoration: none;
+        color: dimgray;
+        font-family:'Raleway', sans-serif;
+    }
+
+    #elements{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 423px){
+    #subhead{
+        font-size:15px;
+    }
 }
