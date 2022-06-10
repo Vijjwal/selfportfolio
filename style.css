@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-    img {
+    #image {
   border-radius: 100%;
   width : 180px;
   border: 1px solid dimgray;
@@ -113,6 +113,7 @@ font-size: 5vh;
 
 .mobile{
    display: none;
+
 }
 
 @media screen and (max-width : 750px) {
@@ -129,6 +130,7 @@ font-size: 5vh;
         margin: auto;
         border-radius:25px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        bottom: 1vh;
     }
 
 
@@ -138,12 +140,14 @@ font-size: 5vh;
         height: fit-content;
         justify-content: center;
         margin: 2.5vw;
+        align-items: center;
     }
     .mobile div a{
         text-decoration: none;
         text-decoration: none;
         color: dimgray;
         font-family:'Raleway', sans-serif;
+        font-size: calc(5px + 2vw);
     }
 
     #elements{
