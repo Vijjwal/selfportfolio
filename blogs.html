@@ -19,8 +19,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <style>
-        #blogs a{
-            color:black;
+        .container{
+    display: flex;
+    justify-content: space-around;
+   height: 83vh;
+    align-items: center;
+   
+}
+        .items{
+            border: 2px solid black;
+            border-radius:20px;
+            padding: 5vw 10vh 5vw 10vh;
+            font-size: 2vw;
+            font-family: Arial;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .container a{
+            text-decoration: none;
+            color: black;
+        }
+        @media screen and (max-width:900px) {
+            .container{
+                flex-direction: column;
+                
+            }
+            .items{ 
+                font-size: 1rem;
+                padding: 8vw 13vh 8vw 13vh;
+            }
+            
         }
     </style>
 </head>
@@ -43,12 +71,11 @@
     </ul>
 </div> 
  </div>
-
- <div class="container">
-
- 
-    <h1 id = "comingsoon">Coming Soon</h1>
-    </div>
+<div class="container">
+<a target = "_blank" href="https://docs.google.com/document/d/1vAxWVwv9IRLq7fMwhFy94nX8uB9OR1-JMChGOj29stE/edit?usp=sharing"> <div class = "items" id="item1">A Bolder India</div></a>
+ <a target = "_blank" href="https://docs.google.com/document/d/1Az7UQ9KE46-s_AHVABqK3C3RCJq4Qn6OiDRYZ2MX-SM/edit?usp=sharing"><div class = "items" id="item2">Turkey in 1968</div></a>
+ <a target = "_blank" href="https://docs.google.com/document/d/18uTB6P1tFu7O2f8NJgtrYMfL_jnWJHMOzUII9WV61Bk/edit?usp=sharing"><div class = "items" id="item3">Narcoterrorism</div></a>
+</div>
 
 <div class="mobile">
 
@@ -62,5 +89,6 @@
     
   </div> 
   </div>
+
 </body>
 </html>
